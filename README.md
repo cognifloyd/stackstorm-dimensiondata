@@ -2,13 +2,21 @@
 
 ## Configuration
 
-`config.yaml` requires 2 values, the API username and password. Each action has the region as a parameter, set by default to dd-na (North America)
 
+Copy the example configuration in [dimensiondata.yaml.example](./dimensiondata.yaml.example)
+to `/opt/stackstorm/configs/dimensiondata.yaml` and edit as required.
+
+It should look like this:
 ```yaml
 ---
 api_user: "myusername"
 api_password: "mypassword"
 ```
+
+You can also use dynamic values from the datastore. See the
+[docs](https://docs.stackstorm.com/reference/pack_configs.html) for more info.
+
+Each action has the region as a parameter, set by default to dd-na (North America)
 
 ## Actions
 
